@@ -9,7 +9,7 @@
     "dev": "nodemon src/app.js"
   },
   "keywords": [],
-  "author": "Marlovy",
+  "author": "Marlovy Cuero",
   "license": "ISC",
   "dependencies": {
     "cors": "2.8.5",

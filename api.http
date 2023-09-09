@@ -1,0 +1,37 @@
+// # Documentación de la API
+GET http://localhost:3000/
+
+// ## Crear un nuevo dorama
+POST http://localhost:3000/doramas
+Content-Type: application/json
+
+{
+    "id" : "5FG46" ,
+  "name": "dorama de ejemplo",
+  "description": "Descripción del dorama de ejemplo",
+  "year": 2000,
+  "imagen": "https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg",
+  "Genero": "genero o generos a los cuales pertenece el dorama de ejemplo"
+}
+
+// ## Listar todos los doramas
+GET http://localhost:3000/api/products
+
+// ## Obtener un dorama por su ID
+GET http://localhost:3000/doramas/:id
+
+// ## Actualizar o modificar un dorama por su ID
+PUT http://localhost:3000/doramas/:id
+Content-Type: application/json
+
+{
+  "id" : "5FG46" ,
+  "name": "dorama de ejemplo",
+  "description": "Descripción del dorama de ejemplo",
+  "year": 2000,
+  "imagen": "https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg",
+  "Genero": "genero o generos a los cuales pertenece el dorama de ejemplo"
+}
+
+// ## Borrar un dorama
+DELETE http://localhost:3000/doramas/:id
